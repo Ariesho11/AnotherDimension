@@ -5,8 +5,10 @@ public class Tester{
     int[][] testme2 = {{1, 2, 3, 4, 5},
                        {5, 5},
                        {4, 3, 2, 1}};
+    int[][] testme22 = {};
     System.out.println(ArrayOps.sum(testme));
     System.out.println(ArrayOps.largest(testme));
-    System.out.println(Arrays.toString(ArrayOps.sumRows(testme2)));
+    System.out.println(Arrays.toString(ArrayOps.sumRows(testme22)));
+    System.out.println(Arrays.toString(ArrayOps.largestInRows(testme2)));
   }
 }
