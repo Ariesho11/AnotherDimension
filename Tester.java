@@ -12,7 +12,10 @@ public class Tester{
                             {1, 2, 3, 4}};
     int[][] testmerectmagic = {{1, 2, 3, 4},
                               {4, 3, 2, 1},
-                              {0, 7, 0, 0}};
+                              {0, 7, 3, 0}};
+    int[][] testmagic = {{2, 4, 6, 7},
+                        {6, 4, 2, 1},
+                        {1, 1, 1, 1}};
     System.out.println(ArrayOps.sum(testme));
     System.out.println(ArrayOps.largest(testme));
     System.out.println(Arrays.toString(ArrayOps.sumRows(testme2)));
@@ -20,6 +23,9 @@ public class Tester{
     System.out.println(ArrayOps.sum(testme2));
     System.out.println(Arrays.toString(ArrayOps.sumCols(testrectangle)));
     System.out.println(ArrayOps.isRowMagic(testmerectmagic));
+    System.out.println(ArrayOps.isRowMagic(testrectangle));
+    System.out.println(ArrayOps.isColMagic(testmerectmagic));
+    System.out.println(ArrayOps.isColMagic(testmagic));
     //Mr. K's test cases
     int[][]  A = { {  1,  0, 12, -1 },
                   {  7, -2,  2,  1 },
