@@ -50,7 +50,14 @@ public class ArrayOps{
   }
 
   public static int[] sumCols(int[][] matrix){
-    int[] sum = new int[matrix.length];
+    int[] sum = new int[matrix[0].length];
+    for(int i = 0; i < matrix[0].length; i++){
+      int tempsum = 0;
+      for(int a = 0; a < matrix.length; a++){
+        tempsum = tempsum + matrix[a][i];
+      }
+      sum[i] = tempsum;
+    }
     return sum;
   }
 
