@@ -81,6 +81,9 @@ public class ArrayOps{
 
   public static boolean isLocationMagic(int[][] matrix, int row, int clmn){
     boolean samesum = false;
+    int[] rowsum = ArrayOps.sumRows(matrix);
+    int[] clmnsum = ArrayOps.sumCols(matrix);
+    if (rowsum[row] == clmnsum[clmn]) samesum = true;
     return samesum;
   }
 
